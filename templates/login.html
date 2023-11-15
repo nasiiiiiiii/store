@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+  <div class="d-flex p-2 justify-content-center align-items-center">
+<form method="post" class="">
+{% csrf_token %}
+  <div class="container">
+    <input type="text" placeholder="Enter Username" name="name" required>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <button type="submit">Login</button>
+  </div>
+  <div class="container">
+    <button class="psw"><a href="{% url 'store:register' %}">Register </a></button>
+  </div>
+</form>
+  {% for i in  messages %}
+  <h3 class="message" style=""> {{ i }} </h3>
+  {% endfor %}
+</div>
+
+{% endblock %}
