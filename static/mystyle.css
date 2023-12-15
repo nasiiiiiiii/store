@@ -1,5 +1,5 @@
 *{
-    font-family:sans-serif;
+    font-family: Serif;
 }
 .dropdown {
   position: relative;
@@ -27,7 +27,7 @@ ul li a{
     text-align : center;
     font-weight : 600;
     font-family: Serif;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 /******************* login form *************************/
 /* Full-width input fields */
@@ -58,14 +58,14 @@ textarea::placeholder{
     color: black;
 }
 button {
-  background-color: #ffffff;
-  color: red;
+  background-color: #04AA6D;
+  color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   border-radius : 10px;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
 }
 button:hover {
   opacity: 0.8;
@@ -73,22 +73,22 @@ button:hover {
 div span {
   width: auto;
   padding: 10px 18px;
-  background-color: blue;
+  background-color: grey;
 }
 .container {
   padding: 16px;
 }
 span.psw {
   float: right;
-  padding-top: 12px;
+  padding-top: 16px;
   background-color: #f44336;
 }
 
 /********************** register ************************/
 /* Add padding to containers */
 .container {
-  padding: 10px;
-  background-color: #0000ff;
+  padding: 16px;
+  background-color: white;
 }
 /* Overwrite default styles of hr */
 hr {
@@ -97,9 +97,9 @@ hr {
 }
 /* Set a style for the submit button */
 .orderbtn1, .orderbtn2 {
-  background-color: #ffffff;
-  color: red;
-  padding: 12px 16px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
   margin: 8px 0;
   border-radius : 10px;
   cursor: pointer;
@@ -111,24 +111,24 @@ hr {
   opacity: 1;
 }
 
-/* Add a grey text color to links */
+/* Add a blue text color to links */
 a {
-  color: #333333;
+  color: dodgerblue;
 }
 
-/* Set a blue background color and center the text of the "sign in" section */
+/* Set a grey background color and center the text of the "sign in" section */
 .signin {
-  background-color: #0000ff;
+  background-color: #f1f1f1;
   text-align: center;
 }
 .orderbtn2 {
  text-decoration: none;
 }
 .message{
-    color:#00ff00;
+    color:red;
     text-align:center;
     font-weight: 400;
-    width:50%;
+    width:25%;
     display: block;
     border-radius:10px;
     transition : display 2s;
@@ -136,10 +136,22 @@ a {
 .message {
     transform : display none;
 }
-.container-fluid{
-background-color: white;
-color:white;
+.dropdown__menu {
+ display: block;
+ position: absolute;
+ top:100%;
+ background-color: var(--color-black);
+
 }
-.welcome-title{
-color:white;
+.dropdown__menu ul {
+display: block;
+margin: 10px;
+}
+.dropdown__menu ul li{
+width: 150px;
+padding: 10px;
+
+
+}
+
 }
